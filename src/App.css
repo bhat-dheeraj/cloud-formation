@@ -1,38 +1,121 @@
-.App {
-  text-align: center;
+.gallery-container {
+  padding: 40px 0px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.gallery-title {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.gallery-images {
+  display: flex;
+  align-items: stretch;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.gallery-img-card.card {
+  width: 300px;
+  height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.gallery-image-title {
+  font-weight: bold;
+}
+
+img.gallery-image {
+  width: 250px;
+}
+
+.upload-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+}
+
+.uploaded-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.button-row.row {
+  display: flex;
+  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  flex-direction: row;
+  gap: 10px;
+  margin-top: 30px;
+}
+
+.upload-drag-drop {
+  border: 2px dashed black;
+  padding: 20px;
+  text-align: center;
+  width: 500px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-row.row .btn.btn-primary {
+  width: 200px;
+}
+
+.file-input-label {
+  cursor: pointer;
+  display: block;
+  margin-top: 10px;
+  background: #0d6efd;
+  padding: 5px 10px;
+  border-radius: 5px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.analyze-row.row {
+  gap: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.analyze-left {
+  width: auto !important;
+}
+
+.analyze-right.col {
+  display: flex;
+  flex-direction: column;
+}
+
+.image-data.row {
+  display: flex;
+  gap: 0px;
+  margin-top: 10px;
+}
+
+.image-label-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.image-labels-left.image-labels.col {
+  padding-right: 20px;
+  border-right: 1px solid black;
+}
+
+.img-lbl-title {
+  font-size: 18px;
+  font-weight: 600;
 }
